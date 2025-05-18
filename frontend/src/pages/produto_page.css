@@ -1,0 +1,40 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.acoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+
+
+.coluna-produto {
+  max-width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.alert button {
+  display: none;
+}

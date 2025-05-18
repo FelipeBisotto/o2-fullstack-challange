@@ -1,0 +1,97 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: flex-end; 
+}
+
+.filtros label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.filtros input[type='date'] {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filtros button {
+  margin-top: 1.6rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filtros button:hover {
+  background-color: #125aa3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+
+.botoes-filtros {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0rem;
+}
+
+.botoes-filtros button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botoes-filtros button:hover {
+  background-color: #125aa3;
+}
+
+.mensagem-central {
+  text-align: center;
+  font-weight: 500;
+  color: #555;
+  margin-top: 2rem;
+}

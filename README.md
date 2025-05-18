@@ -1,44 +1,71 @@
-# O2 Fullstack Challenge
+# SISTEMA DE GESTÃO DE ESTOQUE – O2 Fullstack Challenge
 
-Bem-vindo ao desafio de Fullstack da O2 Inc.! Estamos felizes por você estar interessado em se juntar à nossa equipe. Este repositório contém todas as instruções e requisitos necessários para a conclusão do desafio. 
+Este projeto é um sistema completo de gestão de estoque, desenvolvido como parte do desafio O2 Fullstack Challenge.
 
-## Sobre a O2 Inc.
+Ele incorpora:
+- Cadastro/Deleção/Edição de produtos
+- Movimentações de entrada e saaídas de produtos de estoque
+- Agente Inteligente com comandos naturais de consulta de vendas em um período emovimentação de entradas e saídas de produto
+- Dashboard interativo com gráfico de vendas mensais, resumo de estoque(valor total em estoque e total de itens/produtos vendidos) e produtos em estoque.
+- Relatório de estoque de um período. Engloba nome do produto, quantidade e valor total em estoque.
 
-Estamos construindo uma nova área de tecnologia e engenharia na O2 Inc., focada em criar uma cultura de desenvolvimento colaborativo. Nosso objetivo é formar um time de engenharia onde cada membro esteja dedicado a se desenvolver, trazer ideias inovadoras e ter a oportunidade de crescer profissionalmente. Valorizamos a criatividade, a inovação e o aprendizado contínuo.
+O desenvolvimento foi feito em **frontend (React + Vite)** e **backend (FastAPI + PostgreSQL)**
 
-## Sobre o Desafio
+> Toda a documentação detalhada está disponível na pasta [`docs/`](./docs), incluindo requisitos, regras de negócio, modelagem, arquitetura e testes.
 
-O objetivo deste desafio é desenvolver um sistema de gestão de estoque que permita o cadastro de produtos, registro de movimentações de estoque e geração de relatórios. Queremos avaliar suas habilidades em design de aplicação, qualidade do código, arquitetura e documentação.
+---
 
-## Tecnologias Requeridas
+## Estrutura do Projeto
 
-- **Front-end:** React
-- **Back-end:** TypeScript, Python, Java ou a linguagem de sua preferência, desde que acompanhada de um README detalhado explicando o funcionamento da aplicação.
-- **Banco de Dados:** Banco de dados relacional (MySQL, PostgreSQL, etc.)
-- **Agente IA:** Um agente simples capaz de:
-  - Consultar o total de vendas em um determinado período
-  - Realizar cadastro de novas movimentações de estoque através de comandos em linguagem natural
+```
+├── backend/                   # API REST com FastAPI, PostgreSQL, SQLAlchemy e Pytest
+├── frontend/                  # Interface web com React, Vite, TypeScript, Zod e Axios
+├── docs/                      # Documentação completa do projeto
+├── README.md                  # Este arquivo (resumo geral)
 
-## Visualização de Dados
+```
 
-O sistema deve incluir visualizações básicas dos dados de estoque, como:
-- Gráfico de barras mostrando o valor total de vendas por período
-- Resumo do valor total em estoque (R$)
-- Quantidade total de itens vendidos
-- Dashboard simples com os produtos mais movimentados
+---
 
-## Processo de Submissão
+## Documentações específicas
 
-1. Faça um fork deste repositório.
-2. Implemente a solução conforme descrito no arquivo [DESAFIO.md](https://github.com/O2-Tech/o2-fullstack-challange/blob/main/DESAFIO.md).
-3. Garanta que todas as dependências e instruções de configuração estejam claramente documentadas.
-4. Envie o link do seu repositório forkado para avaliação.
+### [README do Backend ](./README_BACKEND.md)
+Instruções de instalação do backend e do banco de dados
 
-## Dúvidas?
+### [README do Frontend](./README_FRONTEND.md)
+Guia de inicialização do frontend com Vite + React, comunicação com backend
 
-Se você tiver qualquer dúvida durante o processo de implementação, sinta-se à vontade para entrar em contato comigo através do [LinkedIn](https://www.linkedin.com/in/jgabrielfreitas/).
+---
 
-## Boa sorte!
+## Pré-requisitos gerais
 
-Estamos ansiosos para ver seu trabalho e discutir seu potencial para se juntar à nossa equipe. 
-Boa sorte!
+- Python 3.10+
+- Node.js 18+
+- PostgreSQL 13+
+- Navegador atualizado
+
+---
+
+## Como iniciar o projeto (resumo rápido)
+
+1. Inicie o backend e banco dados conforme o [README-back.md](./README-back.md)
+2. Inicie o frontend conforme o [README-front.md](./README-front.md)
+
+---
+
+## Agente Inteligente
+
+O projeto conta com um agente inteligente que interpreta comandos como:
+
+- Consultar vendas no dia 15/05/2025
+- Consultar vendas de 01/05/2025 até 10/05/2025
+- Movimentar entrada de 10 lapis branco no dia 15/05/2025
+- Movimentar saída de 10 lápis branco no dia 15/05/2025
+
+Mais detalhes sobre essa funcionalidade estão documentados nos arquivos do backend e frontend.
+
+---
+
+Projeto foi desenvolvido com muita dedicação!
+Para dúvidas, melhorias ou sugestões, fico aberto para possíveis conversas futuras.
+
